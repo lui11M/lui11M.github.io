@@ -1,0 +1,114 @@
+/* Global Styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: black;
+  color: white;
+  font-family: "Afacad", sans-serif;
+  overflow-y: auto; /* Enable vertical scrolling */
+  height: 100vh; /* Ensure body takes up full viewport height */
+}
+
+#landing-page {
+  overflow-y: auto;
+  height: auto; /* Allow auto height */
+  overscroll-behavior-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  background: linear-gradient(rgb(0, 0, 0) rgba(0, 0, 0, 0.611));
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.081);
+  position: fixed;
+  width: 100%;
+  z-index: 100000;
+  margin-right: 20px;
+}
+
+.logo {
+  height: 45px;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/* Navbar list */
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding-right: 20px;
+}
+
+.nav-list li {
+  margin-left: 30px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #484747;
+  transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+  color: #dfff27;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-list {
+    position: absolute;
+    top: 60px;
+    right: -100%;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+  }
+
+  .nav-list li {
+    margin: 20px 0;
+  }
+
+  .nav-list.open {
+    right: 0;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+/* Animated Quote */
+#quote {
+  font-size: 40px;
+  margin-top: 400px;
+  margin-bottom: 250px;
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+#word-highlight {
+  color: #dfff27;
+}

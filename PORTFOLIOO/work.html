@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./stylework.css">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <!--landingpage-->
+
+    <div id="landing-page">
+        <div id="navbar">
+            <a class="home" href="./index.html"><img class="logo" src="images/logo_lm.png" alt="Logo"></a>
+            <nav class="groups">
+                <ul class="nav-list">
+                    <li><a href="./work.html">Selected projects</a></li>
+                    <li><a href="./aboutme.html">About me</a></li>
+                    <li><a href="./resume.html">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--carousel-->
+
+        <section class="game-section">
+            <h1 class="title">Selected Projects</h1>
+            <div class="owl-carousel custom-carousel owl-theme">
+                <div class="item active" style="background-image: url(./images/carousel/Group\ 89.png);">
+                    <div class="item-desc">
+                        <h3> Zerza</h3>
+                        <p>A homemade jewellery brand, focused on beaded bracelets.</p>
+
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./images/carousel/Group\ 90.png);">
+                    <div class="item-desc">
+                        <h3>Matchless</h3>
+                        <p>A visual identity for a gift box consisting of a showergel bottle, the actual gift box and a
+                            merch.</p>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./images/carousel/Frame\ 13\ 1.png);">
+                    <div class="item-desc">
+                        <h3>Monsters Issue</h3>
+                        <p>A silk screen printed magazine about the life and work of the well-known British designer
+                            Peter Saville.</p>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./images/carousel/Group\ 115.png);">
+                    <div class="item-desc">
+                        <h3>Gare do oriente</h3>
+                        <p>A new identity for one of lisbon's most iconic Stations.</p>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./images/carousel/Group\ 73.png);">
+                    <div class="item-desc">
+                        <h3>Kairos</h3>
+                        <p>Kairos is a holistic fitness coaching business, where their clients are able to relief from
+                            everyday stresses through
+                            exercise, conversation and holistic practices.</p>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./images/carousel/cover\ 1.png);">
+                    <div class="item-desc">
+                        <h3>AfroFado <span>ICDC</span> </h3>
+                        <p>A Vogue issue to showcase the positive impact the African diaspora has had in the Portuguese
+                            culture.</p>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(./images/carousel/image\ 12.png);">
+                    <div class="item-desc">
+                        <h3> <a id="link" href="./assembleia.html">Assembleia</a><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></h3>
+                        <p>A 3d animation about two siblings that stand in completely different political
+                            points within society, experience a wake up call that makes
+                            one of them fall into reality.</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/5332d659bc.js" crossorigin="anonymous"></script>
+    <script>
+        $(".custom-carousel").owlCarousel({
+            autoWidth: true,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true,
+
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 5,
+                    nav: true,
+                    loop: true
+                }
+            }
+
+
+        });
+        $(document).ready(function () {
+            $(".custom-carousel .item").click(function () {
+                $(".custom-carousel .item").not($(this)).removeClass("active");
+                $(this).toggleClass("active");
+
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            new window['Cursor']({
+                targets: ['a']
+            })
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+/* Global Styles */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: black;
+  color: white;
+  font-family: "Afacad", sans-serif;
+  overflow-y: auto; /* Enable vertical scrolling */
+  height: 100vh; /* Ensure body takes up full viewport height */
+}
+
+#landing-page {
+  overflow-y: auto;
+  height: auto; /* Allow auto height */
+  overscroll-behavior-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  background: black;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.081);
+  position: fixed;
+  width: 100%;
+  z-index: 100000;
+  margin-right: 20px;
+}
+
+.logo {
+  height: 45px;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+/* Navbar list */
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding-right: 20px;
+}
+
+.nav-list li {
+  margin-left: 30px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #484747;
+  transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+  color: #dfff27;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-list {
+    position: absolute;
+    top: 60px;
+    right: -100%;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+  }
+
+  .nav-list li {
+    margin: 20px 0;
+  }
+
+  .nav-list.open {
+    right: 0;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+/* Video Section */
+
+#video1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#video1 video {
+  width: 100%; /* Adjust width as needed */
+  max-width: 88vw;
+  border: 5px solid #fff;
+  border-radius: 10px; /* Adjust radius for desired roundness */
+  margin-top: 100px;
+}
+
+p {
+  font-weight: lighter;
+}
+
+.text-columns {
+  margin-left: 155px;
+  margin-right: 155px;
+  column-count: 3; /* Creates 3 columns */
+  column-gap: 40px; /* Sets the space between columns */
+}
+
+.button-container {
+  text-align: center;
+}
+
+.center-button {
+  border: solid #ffffff45;
+  background-color: #ffffff45;
+  margin-top: 100px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  font-size: larger;
+  border-radius: 20px;
+  color: #ffffff45;
+}
+
+.center-button:hover {
+  color: #000000;
+  border: solid #dfff27;
+  background-color: #dfff27;
+  cursor: pointer;
+}
+
+.Overview {
+  margin-left: 155px;
+  margin-bottom: 50px;
+  font-weight: medium;
+}
+.over {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #dfff27;
+}
+
+.Overview p {
+  font-weight: medium;
+}
+
+.Overview span {
+  font-weight: bold;
+}
+
+.button-container2 {
+  text-align: right;
+  margin-right: 88px;
+}
+
+.center-button2 {
+  border: solid #ffffff45;
+  background-color: #ffffff45;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  font-size: larger;
+  border-radius: 20px;
+  color: #ffffff45;
+}
+
+.center-button2:hover {
+  color: #000000;
+  border: solid #dfff27;
+  background-color: #dfff27;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Afacad", sans-serif;
+  font-weight: bold;
+}
+
+/*other projects*/
+
+#city {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#city .footer {
+  width: 100%; /* Adjust width as needed */
+  max-width: 1900px;
+}
+
+.assembleia {
+  max-width: 100vw;
+}
